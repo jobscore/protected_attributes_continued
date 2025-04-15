@@ -84,6 +84,12 @@ module ActiveRecord
 
       protected
 
+      # Assign any deferred nested attributes after the base attributes have been set.
+      # Removed in Rails 7.2.x
+      def assign_nested_parameter_attributes(pairs)
+        pairs.each { |k, v| _assign_attribute(k, v) }
+      end
+
       def mass_assignment_options
         @mass_assignment_options ||= {}
       end
