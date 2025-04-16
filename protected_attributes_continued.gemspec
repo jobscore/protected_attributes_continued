@@ -16,10 +16,10 @@ Gem::Specification.new do |gem|
   gem.files         = Dir["LICENSE.txt", "README.md", "lib/**/*"]
   gem.require_paths = ["lib"]
 
-  gem.add_dependency "activemodel",  ">= 7.2", "< 8"
+  gem.add_dependency "activemodel",  ">= 7.2", "<= 8"
 
-  gem.add_development_dependency "activerecord", ">= 7.2", "< 8"
-  gem.add_development_dependency "actionpack",   ">= 7.2", "< 8"
-  gem.add_development_dependency "railties",   ">= 7.2", "< 8"
+  gem.add_development_dependency "activerecord", ">= 7.2", "<= 8"
+  gem.add_development_dependency "actionpack",   ">= 7.2", "<= 8"
+  gem.add_development_dependency "railties",   ">= 7.2", "<= 8"
   gem.add_development_dependency "mocha", "~> 1.4.0"
 end
